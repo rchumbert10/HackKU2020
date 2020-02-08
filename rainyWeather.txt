@@ -1,0 +1,24 @@
+[
+  {
+    "LocalObservationDateTime": "2020-02-08T04:58:00-05:00",
+    "EpochTime": 1581155880,
+    "WeatherText": "Light rain",
+    "WeatherIcon": 19,
+    "HasPrecipitation": true,
+    "PrecipitationType": "Rain",
+    "IsDayTime": false,
+    "Temperature": {
+      "Metric": {
+        "Value": -2.7,
+        "Unit": "C",
+        "UnitType": 17
+      },
+      "Imperial": {
+        "Value": 27,
+        "Unit": "F",
+        "UnitType": 18
+      }
+    },
+    "MobileLink": "http://m.accuweather.com/en/us/lawrence-mi/49064/current-weather/2211264?lang=en-us",
+    "Link": "http://www.accuweather.com/en/us/lawrence-mi/49064/current-weather/2211264?lang=en-us"
+  }

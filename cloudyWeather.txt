@@ -1,0 +1,25 @@
+[
+  {
+    "LocalObservationDateTime": "2020-02-08T04:53:00-05:00",
+    "EpochTime": 1581155580,
+    "WeatherText": "Mostly cloudy",
+    "WeatherIcon": 38,
+    "HasPrecipitation": false,
+    "PrecipitationType": null,
+    "IsDayTime": false,
+    "Temperature": {
+      "Metric": {
+        "Value": -5,
+        "Unit": "C",
+        "UnitType": 17
+      },
+      "Imperial": {
+        "Value": 23,
+        "Unit": "F",
+        "UnitType": 18
+      }
+    },
+    "MobileLink": "http://m.accuweather.com/en/us/lawrence-ma/01840/current-weather/333572?lang=en-us",
+    "Link": "http://www.accuweather.com/en/us/lawrence-ma/01840/current-weather/333572?lang=en-us"
+  }
+]
