@@ -20,7 +20,7 @@ using System.Serialzable;
 // }
 
 class weatherType{
-	public static void Main(String[] arg0{
+	public static void Main(String[] arg){
 		//Usinga list instead of an arry soI can shuffle/randomize the weather
 		List<string> weather = new List<string>();
 		//4 main weather types
