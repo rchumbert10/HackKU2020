@@ -11,13 +11,6 @@ using System.Serialzable;
 //This will read through the data files so that
 //we can get the current conditions for  the game
 
-// class ReadFile {
-	// static void Main(){
-		// string dataFile[];
-		// string fileName = ("test.txt"); //needs to take whatever file is given by API
-		// dataFile[] = File.ReadAllLines(fileName);
-	// }
-// }
 
 class weatherType{
 	public static void Main(String[] arg){
@@ -30,19 +23,20 @@ class weatherType{
 		weather.Add("Sunny");
 		//Effectivly randomizes the list
 		shuffledList = weather.OrderBy( x => Random.value ).ToList( );
-		int i;
+		weather = shuffledList;
+		int i = 0;
 		//for loop to change the weather 
-		for(i = 0; i < shuffledList.Capacity ; i++){
-			if(i != shuffledList.Capacity){
-				i++;
-			}
-			else if(i == shuffledList.Capacity){
-				shuffledList;
-			}
-			else{
-				string errorMessage = "Error, broke out of loop";
-				Console.WriteLine(errorMessage);
-				break;
+		while (i != shuffledList.Capacity){		//while i is not equal to the list size (hasn't gone through entire list)
+			i++;
+			for(i = 1; i <= shuffledList.Capacity ; i++){
+				if(i <= shuffledList.Capacity){
+					i++;					//i inrease to next part of list
+					weather = weather[i]; //move to next weather condition
+				}
+				if(i > shuffledList.Capacity){
+					weather = shuffledList;		//reshuffle list
+					i = 0;					//reset counter
+				}
 			}
 		}
 	}
