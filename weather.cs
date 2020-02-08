@@ -30,5 +30,20 @@ class weatherType{
 		weather.Add("Sunny");
 		//Effectivly randomizes the list
 		shuffledList = weather.OrderBy( x => Random.value ).ToList( );
+		int i;
+		//for loop to change the weather 
+		for(i = 0; i < shuffledList.Capacity ; i++){
+			if(i != shuffledList.Capacity){
+				i++;
+			}
+			else if(i == shuffledList.Capacity){
+				shuffledList;
+			}
+			else{
+				string errorMessage = "Error, broke out of loop";
+				Console.WriteLine(errorMessage);
+				break;
+			}
+		}
 	}
 }
